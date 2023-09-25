@@ -1,17 +1,14 @@
-import React from 'react';
+import cart from './assets/cart.svg'
 
-const CartWidget = () => {
-  // Número hardcodeado (fijo)
-  const itemCount = 5; 
-
+const CarWidget = ()=> {
   return (
-    <>
-      <img src="https://i.pinimg.com/originals/bf/19/90/bf1990e247292b756ca7926443f00ab6.jpg" alt="carrito" width={50} height={50} />
-      <span className="cart-item-count">{itemCount}</span>
-    </>
-  );
-};
+    <div>
+      <img src ={cart} alt='carrito'/>
+      0
 
-export default CartWidget;
+    </div>
+  )
+}
+export default CarWidget
 
 
