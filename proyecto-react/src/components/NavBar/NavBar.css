@@ -1,0 +1,27 @@
+h2 {
+    text-decoration: none;
+    color:yellow;
+    font-size:xx-large;
+}
+.Option {
+    border: 2px solid violet; 
+    padding: 5px 10px; 
+    margin: 5px; 
+    display: inline-block; 
+    text-decoration: none; 
+    color: black; 
+    border-radius: 4px; 
+    background-color: violet; 
+  }
+  
+  .ActiveOption {
+    border: 2px solid violet; 
+    padding: 5px 10px; 
+    margin: 5px; 
+    display: inline-block; 
+    text-decoration: none; 
+    color: white; 
+    background-color: violet; 
+    border-radius: 4px; 
+  }
+  
