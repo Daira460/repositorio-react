@@ -1,21 +1,28 @@
-import React,{ useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ItemDetailContainer.css';
 import { useParams } from 'react-router-dom';
-import { getProductById } from '../../asynMock';
+import { doc, getDoc, getFirestore } from 'firebase/firestore';
 import ItemDetails from '../ItemDetails/ItemDetails';
-
 
 const ItemDetailsContainer = () => {
   const [product, setProduct] = useState(null);
+  const { itemId } = useParams();
 
-  const {itemId} = useParams ();
-
-  
   useEffect(() => {
-    getProductById(itemId)
-      .then(response => {
-        setProduct(response);
-        console.log (product)
+    const db = getFirestore();
+    
+
+    const productRef = doc(db, 'products', itemId);
+
+    getDoc(productRef)
+      .then((docSnap) => {
+        if (docSnap.exists()) {
+          const productData = docSnap.data();
+          setProduct(productData);
+          console.log('Datos del producto cargados:', productData);
+        } else {
+          console.log('El documento del producto no existe');
+        }
       })
       .catch(error => {
         console.error(error);
