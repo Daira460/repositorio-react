@@ -32,8 +32,14 @@ const ItemListContainer = ({ greeting }) => {
         setLoading(false)
       })
   }, [categoryId]) 
-}
 
-export default ItemListContainer;
+  return(
+    <div>
+      {loading ? <p>Cargando...</p> : <ItemList products={products}/>}
+    </div>
+  )
+}
+export default ItemListContainer
+
 
   
