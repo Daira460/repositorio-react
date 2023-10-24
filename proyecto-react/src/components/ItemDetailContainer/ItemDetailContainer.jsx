@@ -12,7 +12,7 @@ const ItemDetailsContainer = () => {
     const db = getFirestore();
     
 
-    const productRef = doc(db, 'products', itemId);
+    const productRef = doc(db, 'items', itemId);
 
     getDoc(productRef)
       .then((docSnap) => {

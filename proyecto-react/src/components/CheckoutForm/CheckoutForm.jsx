@@ -6,7 +6,7 @@ const CheckoutForm = ({ onConfirm }) => {
   const [email, setEmail] = useState('');
 
   const handleConfirm = (event) => {
-    event.preventDefault(); // Corregir aquí
+    event.preventDefault(); 
 
     const userData = {
       name,
