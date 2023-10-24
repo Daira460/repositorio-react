@@ -19,9 +19,10 @@ const Cart = () => {
 
   return (
     <div>
-   {cart.map((p, i) => (
+ {cart.map((p, i) => (
   <CartItem key={`${p.id}-${i}`} {...p} />
 ))}
+
 
 
       <button onClick={() => clearCart()} className="Button">
@@ -34,8 +35,7 @@ const Cart = () => {
   );
 }
 
-export default Cart;
-
+export default Cart;
 
 
 
