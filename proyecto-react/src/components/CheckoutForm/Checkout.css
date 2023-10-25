@@ -1,0 +1,35 @@
+/* CheckoutForm.css */
+.Contenedor {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Label {
+    margin: 10px;
+  }
+  
+  .Input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+  }
+  
+  .Button {
+    background-color: violet;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .Button:hover {
+    background-color: yellow;
+  }
+  
