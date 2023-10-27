@@ -17,7 +17,7 @@ const ItemDetailsContainer = () => {
       .then((docSnap) => {
         if (docSnap.exists()) {
           const productData = docSnap.data();
-          setProduct(productData);
+          setProduct({...productData, id:docSnap.id});
           console.log('Datos del producto cargados:', productData);
         } else {
           console.log('El documento del producto no existe');
