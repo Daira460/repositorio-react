@@ -49,3 +49,6 @@ Si necesitas ayuda o tienes alguna pregunta, no dudes en contactarnos:
 ---
 ¡Gracias por elegir nuestra tienda en línea para tus compras de moda! Esperamos que tengas una experiencia de compra agradable.
 
+[IMAGEN] ![proyectofinal-react (3)](https://github.com/Daira460/repositorio-react/assets/129333387/fb63d4e1-f687-4841-9239-53ca2bf11ac9)
+
+
